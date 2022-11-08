@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "import numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\n%matplotlib inline\nimport seaborn as sns\ndata = pd.read_csv\ndata.shape\n(4177, 9)\ndata.head()\nSex\tLength\tDiameter\tHeight\tWhole weight\tShucked weight\tViscera weight\tShell weight\tRings\n0\tM\t0.455\t0.365\t0.095\t0.5140\t0.2245\t0.1010\t0.150\t15\n1\tM\t0.350\t0.265\t0.090\t0.2255\t0.0995\t0.0485\t0.070\t7\n2\tF\t0.530\t0.420\t0.135\t0.6770\t0.2565\t0.1415\t0.210\t9\n3\tM\t0.440\t0.365\t0.125\t0.5160\t0.2155\t0.1140\t0.155\t10\n4\tI\t0.330\t0.255\t0.080\t0.2050\t0.0895\t0.0395\t0.055\t7\n# describe the data\n\ndata.describe()\nLength\tDiameter\tHeight\tWhole weight\tShucked weight\tViscera weight\tShell weight\tRings\ncount\t4177.000000\t4177.000000\t4177.000000\t4177.000000\t4177.000000\t4177.000000\t4177.000000\t4177.000000\nmean\t0.523992\t0.407881\t0.139516\t0.828742\t0.359367\t0.180594\t0.238831\t9.933684\nstd\t0.120093\t0.099240\t0.041827\t0.490389\t0.221963\t0.109614\t0.139203\t3.224169\nmin\t0.075000\t0.055000\t0.000000\t0.002000\t0.001000\t0.000500\t0.001500\t1.000000\n25%\t0.450000\t0.350000\t0.115000\t0.441500\t0.186000\t0.093500\t0.130000\t8.000000\n50%\t0.545000\t0.425000\t0.140000\t0.799500\t0.336000\t0.171000\t0.234000\t9.000000\n75%\t0.615000\t0.480000\t0.165000\t1.153000\t0.502000\t0.253000\t0.329000\t11.000000\nmax\t0.815000\t0.650000\t1.130000\t2.825500\t1.488000\t0.760000\t1.005000\t29.000000\n# information of the data\n\ndata.info()\nRangeIndex: 4177 entries, 0 to 4176\nData columns (total 9 columns):\n #   Column          Non-Null Count  Dtype  \n---  ------          --------------  -----  \n 0   Sex             4177 non-null   object \n 1   Length          4177 non-null   float64\n 2   Diameter        4177 non-null   float64\n 3   Height          4177 non-null   float64\n 4   Whole weight    4177 non-null   float64\n 5   Shucked weight  4177 non-null   float64\n 6   Viscera weight  4177 non-null   float64\n 7   Shell weight    4177 non-null   float64\n 8   Rings           4177 non-null   int64  \ndtypes: float64(7), int64(1), object(1)\nmemory usage: 293.8+ KB\n ",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "ename": "<class 'SyntaxError'>",
+          "evalue": "invalid syntax (<ipython-input-2-af6a09f4614a>, line 10)",
+          "traceback": [
+            "\u001b[0;36m  Cell \u001b[0;32mIn [2], line 10\u001b[0;36m\u001b[0m\n\u001b[0;31m    Sex\tLength\tDiameter\tHeight\tWhole weight\tShucked weight\tViscera weight\tShell weight\tRings\u001b[0m\n\u001b[0m       \t^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ],
+          "output_type": "error"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
